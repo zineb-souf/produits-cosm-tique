@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column align-items-center mt-5">
+
+    <div class="alert alert-info w-50 text-center" role="alert">
+        Veuillez remplir les informations de paiement ci-dessous.
+    </div>
+
+    <form id="paymentForm" class="mt-4 p-4 border rounded bg-light w-50" novalidate>
+        <h3 class="text-center">Informations de paiement</h3>
+        <div class="form-group">
+            <label for="cardNumber">Numéro de carte :</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="Votre numéro de carte" required>
+            <div class="invalid-feedback">Veuillez entrer un numéro de carte valide.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="expiryDate">Date d'expiration :</label>
+            <input type="text" class="form-control" id="expiryDate" placeholder="MM/AA" required>
+            <div class="invalid-feedback">Veuillez entrer une date d'expiration valide.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="cvv">CVV :</label>
+            <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+            <div class="invalid-feedback">Veuillez entrer un code CVV valide.</div>
+        </div>
+
+        <form id="paymentForm" class="needs-validation mt-4 p-4 border rounded bg-light w-50" novalidate>
+            <button type="submit" class="btn btn-primary btn-block">Valider</button>
+        </form>
+        
+    
+
+        <div class="alert alert-success w-50 text-center mt-3 d-none" role="alert">
+            Paiement effectué avec succès !
+        </div>
+        <div class="alert alert-danger w-50 text-center mt-3 d-none" role="alert">
+            Échec du paiement. Veuillez réessayer.
+        </div>
+        
+    </form>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
