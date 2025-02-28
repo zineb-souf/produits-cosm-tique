@@ -259,3 +259,7 @@ footer:hover {
 .btn-container a:hover{
   color: white;
 }
+img{
+  display: flex;
+  flex-wrap: wrap;
+}
